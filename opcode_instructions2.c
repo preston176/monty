@@ -1,28 +1,22 @@
 #include "monty.h"
 
 /**
- * _queue - Set Format of the data to a queue (FIFO)
+ * _queue - sets the format of the data to a queue (FIFO)
  *
  * @doubly: head of the linked list
  * @cline: line number;
  * Return: no return
  */
 void _queue(stack_t **doubly, unsigned int cline)
-
-
-
 {
 	(void)doubly;
 	(void)cline;
 
 	vglo.lifo = 0;
-
-
-
 }
 
 /**
- * _stack - Set Format for the data to a stack (LIFO)
+ * _stack - sets the format fo the data to a stack (LIFO)
  *
  * @doubly: head of the linked list
  * @cline: line number;
@@ -37,9 +31,9 @@ void _stack(stack_t **doubly, unsigned int cline)
 }
 
 /**
- * _add - Add top two elements of the stack
+ * _add - adds the top two elements of the stack
  *
- * @doubly: Head of the linked list
+ * @doubly: head of the linked list
  * @cline: line number;
  * Return: no return
  */
@@ -62,7 +56,6 @@ void _add(stack_t **doubly, unsigned int cline)
 
 	aux = (*doubly)->next;
 	aux->n += (*doubly)->n;
-    
 	_pop(doubly, cline);
 }
 
@@ -80,9 +73,9 @@ void _nop(stack_t **doubly, unsigned int cline)
 }
 
 /**
- * _sub - Subtract top element to the second top element of the stack
+ * _sub - subtracts the top element to the second top element of the stack
  *
- * @doubly: Head of linked list
+ * @doubly: head of the linked list
  * @cline: line number;
  * Return: no return
  */
